@@ -1,14 +1,24 @@
 package com.moviesbox.movies;
 
-public class Movies {
+public class Movie {
 	
+	private int id;
 	private String name;
 	private String category;
 	
-	public Movies(String name, String category) {
+	public Movie(int id, String name, String category) {
 		super();
+		this.id = id;
 		this.name = name;
 		this.category = category;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 	public String getName() {
