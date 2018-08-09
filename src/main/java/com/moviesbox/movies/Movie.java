@@ -1,10 +1,19 @@
 package com.moviesbox.movies;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Movie {
 	
+	@Id
 	private int id;
 	private String name;
 	private String category;
+	
+	public Movie() {
+		
+	}
 	
 	public Movie(int id, String name, String category) {
 		super();
